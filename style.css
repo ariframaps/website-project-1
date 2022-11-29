@@ -46,3 +46,152 @@ table {
 body{
     font-family: sans-serif;
 }
+
+/* NAVBAR SECTION ======== */
+.navbar{
+    /* positioning */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    height: 80px;
+    font-size: 1.2rem;
+    background-color: aqua;
+}
+
+.nav_container{
+    /* positioning */
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    background-color: antiquewhite;
+}
+
+.navbar_logo{
+    /* positioning */
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar_menu{
+    /* positioning */
+    display: flex;
+    align-items: center;
+}
+
+.navbar_item{
+    /* positioning */
+    width: 125px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar_btn{
+    /* positioning */
+    padding: 0 1rem;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_btn .button{
+    /* positioning */
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navbar screen breakpoint */
+@media screen and (max-width:960px){
+    body{
+        background-color: pink;
+    }
+
+    .nav_container{
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        height: 66vh;
+        background-color: blueviolet;
+        z-index: -1;
+        opacity: 1;
+        top: -1000px;
+    }
+
+    .navbar_item{
+        width: 100%;
+    }
+
+    .navbar_menu.active{
+        top: 0;
+        z-index: 9999;
+        display: grid;
+        grid-template-columns: auto;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        height: 66vh;
+        background-color: blueviolet;
+        opacity: 1;
+    }
+
+    .navbar_toggle{
+        border: 1px solid red;
+        width: 40px;
+        height: fit-content;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .navbar_toggle .bar{
+        display: block;
+        cursor: pointer;
+        background-color: black;
+        height: 5px;
+        width: 100;
+    }
+
+    .navbar_toggle .bar#firstChild{
+        transform-origin: left;
+        width: 35px;
+        transform: rotate(43deg);
+        position: relative;
+    }
+
+    .navbar_toggle .bar#thirdChild{
+        transform-origin: left;
+        width: 35px;
+        transform: rotate(-43deg);
+        position: relative;
+    }
+
+    .navbar_toggle .bar#secondChild{
+        display: none;
+    }
+}
