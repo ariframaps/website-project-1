@@ -146,7 +146,7 @@ body{
 
     .navbar_menu.active{
         top: 0;
-        z-index: 9999;
+        z-index: 999;
         display: grid;
         grid-template-columns: auto;
         position: absolute;
@@ -177,21 +177,23 @@ body{
         width: 100;
     }
 
-    .navbar_toggle .bar#firstChild{
+    .navbar_toggle .bar.firstChild{
         transform-origin: left;
         width: 35px;
         transform: rotate(43deg);
         position: relative;
+        z-index: 9999;
     }
 
-    .navbar_toggle .bar#thirdChild{
+    .navbar_toggle .bar.thirdChild{
         transform-origin: left;
         width: 35px;
         transform: rotate(-43deg);
         position: relative;
+        z-index: 9999;
     }
 
-    .navbar_toggle .bar#secondChild{
+    .navbar_toggle .bar.secondChild{
         display: none;
     }
 }
