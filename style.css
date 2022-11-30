@@ -58,7 +58,8 @@ body{
     z-index: 999;
     height: 80px;
     font-size: 1.2rem;
-    background-color: aqua;
+    background-color: #111;
+
 }
 
 .nav_container{
@@ -71,7 +72,6 @@ body{
     display: flex;
     justify-content: space-between;
     z-index: 1;
-    background-color: antiquewhite;
 }
 
 .navbar_logo{
@@ -79,6 +79,15 @@ body{
     font-size: 2rem;
     display: flex;
     align-items: center;
+    background: #40E0D0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar_menu{
@@ -96,6 +105,16 @@ body{
     justify-content: center;
 }
 
+.navbar_menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar_item a:hover{
+    color: #FF0080;
+    transition: .2s all ease;
+
+}
 .navbar_btn{
     /* positioning */
     padding: 0 1rem;
@@ -103,6 +122,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* styling */
+    background: #40E0D0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    border-radius: 4px;    
 }
 
 .navbar_btn .button{
@@ -117,9 +142,6 @@ body{
 
 /* navbar screen breakpoint */
 @media screen and (max-width:960px){
-    body{
-        background-color: pink;
-    }
 
     .nav_container{
         display: flex;
@@ -134,18 +156,35 @@ body{
         left: 0;
         margin: 0;
         height: 66vh;
-        background-color: blueviolet;
         z-index: -1;
         opacity: 1;
         top: -1000px;
+        font-size: 1.6rem;
+        transition: .3s all ease;
     }
 
     .navbar_item{
         width: 100%;
     }
 
+    .navbar_menu a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar_btn{
+        width: 60vw;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 4px;
+        background: #40E0D0;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FF0080, #FF8C00, #40E0D0);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FF0080, #FF8C00, #40E0D0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+              
+    }
+
     .navbar_menu.active{
-        top: 0;
+        top: 80px;
         z-index: 999;
         display: grid;
         grid-template-columns: auto;
@@ -154,12 +193,12 @@ body{
         left: 0;
         margin: 0;
         height: 66vh;
-        background-color: blueviolet;
+        background-color: #111;
         opacity: 1;
+        transition: .3s all ease;
     }
 
     .navbar_toggle{
-        border: 1px solid red;
         width: 40px;
         height: fit-content;
         height: 35%;
@@ -172,9 +211,10 @@ body{
     .navbar_toggle .bar{
         display: block;
         cursor: pointer;
-        background-color: black;
+        background-color: white;
         height: 5px;
         width: 100;
+        transition: .3s all ease;
     }
 
     .navbar_toggle .bar.firstChild{
