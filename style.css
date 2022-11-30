@@ -237,3 +237,48 @@ body{
         display: none;
     }
 }
+
+
+/* HERO SECTION */
+.hero{
+    /* positioning */
+    background-image: linear-gradient(to right, #111, #000);
+    color: white;
+    padding: 200px 0;
+}
+
+.hero_container{
+    /* positioning */
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    height: 90%;
+    padding: 30px;
+}
+
+.hero_heading{
+    /* positioning */
+    font-size: 100px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.hero_description{
+    /* positioning */
+    font-size: 60px;
+    margin: 24px 0;
+}
+
+@media screen and (max-width: 768px){
+    .hero_heading{
+        font-size: 69px;
+    }
+
+    .hero_description{
+        font-size: 40px;
+    }
+}
