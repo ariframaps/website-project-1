@@ -249,7 +249,6 @@ body{
 
 .hero_container{
     /* positioning */
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -267,10 +266,29 @@ body{
     font-weight: bold;
 }
 
+.hero_heading span{
+    /* styling */
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .hero_description{
     /* positioning */
     font-size: 60px;
     margin: 24px 0;
+
+    /* styling */
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px){
