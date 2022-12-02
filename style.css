@@ -462,6 +462,40 @@ body{
     padding-bottom: 10rem;
 }
 
+.services h1{
+    /* styling */
+    font-size: 3rem;
+    font-weight: bold;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.services h2{
+    /* styling */
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.services p{
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+}
+
+.services button{
+    /* styiling */
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 4px;
+}
+
 .services_wrapper{
     /* positioning */
     display: grid;
@@ -473,11 +507,39 @@ body{
     /* positioning */
     width: 300px;
     height: 425px;
-    background-color: pink;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    /* styling */
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: .2s all ease;
+}
+
+.services_card:hover{
+    transform: scale(1.025);
+}
+
+.services_card:nth-child(2){
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fb9c03, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fb9c03, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.services_card:nth-child(3){
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.services_card:nth-child(4){
+    background: #1a2a6c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(45deg, #fdbb2d, #b21f1f, #1a2a6c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 @media screen and (max-width: 1300px){
