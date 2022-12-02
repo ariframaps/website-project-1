@@ -12,3 +12,19 @@ const toggleFunction = function() {
 }
 
 navbar_toggle.addEventListener("click", toggleFunction);
+
+const home_button = document.querySelector("#home");
+const about_button = document.querySelector("#about");
+const services_button = document.querySelector("#services");
+const button_button = document.querySelector("#button");
+
+const buttonFunction = function(){
+    navbar_menu.classList.toggle("active");
+}
+
+if(window.innerWidth <= 960){
+    home_button.addEventListener('click', buttonFunction)
+    about_button.addEventListener('click', buttonFunction)
+    services_button.addEventListener('click', buttonFunction)
+    button_button.addEventListener('click', buttonFunction)
+}
