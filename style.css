@@ -581,3 +581,39 @@ body{
 .main_img_container.signupMain{
     justify-self: end;
 }
+
+/* footer section */
+.footer_links{
+    /* positioning */
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: #12c2e9;
+}
+
+.footer_link_wrapper{
+    /* positioning */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: yellow;
+    width: 70%;
+}
+
+.footer_link_items{
+    /* positioning */
+    display: flex;
+    flex-direction: column;
+}
+
+.rights{
+    /* positioning */
+    display: flex;
+    background-color: #f5af19;
+    gap: 10rem;
+}
