@@ -313,14 +313,19 @@ body{
     display: grid;
     gap: 40px;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
     color: white;
     padding: 0 50px;
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
     max-width: 1400px;
+}
+
+.main_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 .main_content h1{
@@ -340,7 +345,7 @@ body{
 
 .main_content h2{
     font-size: 4rem;
-    margin: 20px 0;
+    margin: 30px 0;
     font-weight: bold;
 
     /* styling */
@@ -360,6 +365,7 @@ body{
 
 .main_img_container{
     /* positioning */
+    /* justify-self: end; */
     height: 500px;
     width: 500px;
     background-color: #3F5EFB;
@@ -387,6 +393,7 @@ body{
     border-radius: 4px;
     position: relative;
     cursor: pointer;
+    border: none;
 }
 
 .main_btn a{
@@ -404,6 +411,7 @@ body{
     top: 0;
     width: 0px;
     height: 100%;
+    border-radius: 2px;
     transition: .3s all ease;
     background: #FC466B;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
@@ -560,4 +568,9 @@ body{
     .services_card{
         width: 100%;
     }
+}
+
+/* FEATURES SECTION */
+.main_img_container.signupMain{
+    justify-self: end;
 }
