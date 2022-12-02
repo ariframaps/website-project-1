@@ -440,6 +440,13 @@ body{
         max-width: 500px;
     }
 
+    .main_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .main_content h1{
         margin: 40px 0;
         /* font-size: 1.5rem; */
